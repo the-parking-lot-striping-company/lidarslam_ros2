@@ -26,8 +26,7 @@ def generate_launch_description():
         executable='scanmatcher_node',
         parameters=[main_param_dir],
         remappings=[
-            ('/cloud_all_fields_fullname', '/input_cloud'),
-            ('/input_cloud','/velodyne_points')
+            ('/cloud_all_fields_fullframe','/velodyne_points')
             ],
         output='screen'
         )
